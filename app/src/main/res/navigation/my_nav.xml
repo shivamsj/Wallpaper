@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="sjniit.sj.wallpaper.Fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/videoFragment"
+        android:name="sjniit.sj.wallpaper.Fragment.VideoFragment"
+        android:label="fragment_video"
+        tools:layout="@layout/fragment_video" />
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="sjniit.sj.wallpaper.Fragment.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/fullScreenWallpaperFragment"
+        android:name="sjniit.sj.wallpaper.Fragment.FullScreenWallpaperFragment"
+        android:label="fragment_full_screen_wallpaper"
+        tools:layout="@layout/fragment_full_screen_wallpaper" >
+        <argument
+            android:name="Orginal_url_image"
+            app:argType="string"
+            android:defaultValue="default" />
+    </fragment>
+</navigation>
